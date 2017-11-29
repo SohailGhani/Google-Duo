@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="com.teknords.googledue.MainActivity"
+    android:background="@drawable/homemainbg">
+
+
+    <ListView
+
+        android:textSize="2dp"
+        android:layout_width="450dp"
+        android:layout_height="500dp"
+        android:id="@+id/listView"
+        android:background="#f8f9fa"
+        android:divider="#5d7fde"
+        android:textColor="#5d7fde"
+        android:dividerHeight="2.0sp"
+        android:scrollbars="none"
+        android:layout_marginBottom="70dp"
+        android:layout_above="@+id/adView"
+        android:layout_centerHorizontal="true" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>
+
+
+
+
